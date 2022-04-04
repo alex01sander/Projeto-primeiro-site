@@ -1,0 +1,587 @@
+*{
+    margin: 0 auto; 
+    padding: 0;
+    
+   }
+   
+img{
+       display: inline-block;
+       padding: 0;
+       
+}
+
+body{
+    background-image: url('../image/fundo.png');
+    background-repeat: no-repeat ;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:top;
+    position: relative;    
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+   
+    
+    
+    
+}
+
+
+#menu{
+    list-style-type: none;
+    padding: 16px;
+    background-attachment: fixed;
+    background-color: #040c08;
+    text-align: center;
+    font-size: 15px;
+}    
+    
+#menu li{
+    display: inline;
+    position: relative;
+}
+
+#menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 150px;
+}
+
+#menu li a:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+
+
+#menu li:hover ul, #menu li.over ul{
+    display:block;
+}
+
+#menu li ul li{
+    border:1px solid black;
+    display:block;
+    width:170px;
+}
+
+#menu li  ul{
+    position:absolute;
+    text-align: center;
+    left:0;
+    background-color:#05160d;
+    display:none;
+}    
+
+
+.logotipo{
+    margin-top: 50px;
+    width: 400px;
+    animation-name: opacity;
+    animation-duration: 6s;
+    
+}    
+
+    
+
+
+.titulo{
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: white;
+}
+
+#orçamento{
+    margin-top: 100px;
+   max-width: 1000px;
+}   
+    
+    
+    
+
+
+.orçament{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    background-color: darkorange;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+}    
+    
+
+
+.orçament:hover{
+    background-color: orange;
+}    
+
+
+.contatos{
+    margin: 30px;
+    text-align: center;
+}
+
+.whats, .insta{
+    margin: 10px;
+}
+#serv{
+    background-image: url("../image/fundo\ serviço.png");
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+}
+.serviços{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}    
+    
+
+
+.serviços > div{
+    flex: 200px;
+    margin: 10px;
+    width: 25%;
+    color: white;
+}        
+   
+
+
+.service{
+    font-size: 50px;
+    color: white;
+}    
+
+
+.lgt, h4, .idvisual, .visual{
+    color: white;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 20;
+}
+
+.log{
+    margin-top: 30px;
+}    
+
+
+
+.digital{
+    width: 200px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.midiadigital{
+    color: white;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.trabalhos, h5{
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.slide {
+    max-width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    display: grid;
+    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
+}    
+  
+  
+.slide-items {
+    position: relative;
+    grid-area: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 3px solid black;
+    width: 800px;
+}  
+  
+.slide-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide-nav {
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 10fr;
+}  
+  
+.slide-nav button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    width: 400px;
+}
+  
+.slide-items > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.slide-items > .active {
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+  }
+  
+  .slide-thumb {
+    display: flex;
+    grid-column: 1 / 3;
+  }
+  
+  .slide-thumb > span {
+    flex: 1;
+    display: block;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .slide-thumb > span.active::after {
+    content: '';
+    display: block;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    transform: translateX(-100%);
+    animation: thumb 5s forwards linear;
+  }
+
+
+  #description{
+      background-color: rgb(51, 51, 51);
+      margin-left: 300px;
+      margin-right: 300px;
+      padding: 50px;
+      margin-top: 100px;
+      min-width: 100px      
+  }
+
+  .desc{
+      color: white;
+      font-size: 30px;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .sub-desc{
+      color: white;
+      margin-top: 30px;
+      font-size: 15px;
+  }
+
+  #formulario{
+      background-color: rgb(51, 51, 51);
+      margin-left: 300px;
+      margin-right: 300px;
+      padding: 25px;
+      margin-top: 100px;
+      min-width: 100px;
+      color: white;   
+      
+  }
+
+  .form-title{
+      color: rgb(250, 250, 250);
+      
+  }
+
+  .form-subtitle{
+      margin-top: 20px;
+      font-size: 15px;
+      color: white;
+  }
+
+  form{
+      font-size: 20px;
+  }
+  
+
+
+  form > div{
+      margin: 20px;
+      
+  }
+
+  
+  .ideia{
+      width: 300px;
+      height: 100px;
+  }
+
+  input[type="submit"]{
+      color: white;
+      background-color: black;
+      border: none;
+      width: 300px;
+      height: 25px;
+  }
+
+  
+  
+
+  .rodape{
+      background-color: rgb(51, 51, 51);
+      margin-left: 300px;
+      margin-right: 300px;
+      padding: 10px;
+      margin-top: 100px;
+      min-width: 100px;
+      
+      
+      
+  }
+  
+  footer > DIV{
+    display: inline-block;
+    padding: 10px;
+     
+  }
+  
+  
+  .fim{
+      color: white;
+      display:block;
+      margin-top: 5px;
+     }
+
+  .trabalhos-font{
+    font-size: 45px;  
+  }   
+
+  .trabalhos-sub{
+      font-size: 20px;
+      padding: 30px;
+      
+  }
+
+  h4, h2, h3, h4, h5{
+    font-family: 'Quattrocento Sans', sans-serif;
+  }   
+  
+  h4{
+      font-size: 20px;
+  }
+
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  h6{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @keyframes thumb {
+    to {
+      transform: initial;
+    }
+  }
+
+  #menu {
+    
+    position: relative;
+    animation: mymove 5s;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes opacity{
+      from{opacity: 0;}
+      to{opacity: 6;}
+  }
+
+  @keyframes mymove {
+    from {left: -500px;}
+    to {left: 0px;}
+  }
+
+  @media only screen and (max-width: 400px) {
+    #menu {
+        background-color: rgb(51, 51, 51);
+        width: 300px;
+    }
+
+    .serviços{
+      text-align: center;
+      width: 200px;
+      
+      
+    }
+
+    #serv{
+        
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    .slide{
+    max-width: 575px;
+    height: 350px;
+    margin: 20px 2px;
+    display: grid;
+    
+    }
+    
+    .slide-items {
+        position: relative;
+        grid-area: 1/1;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 3px solid black;
+        width: 350px;
+    }
+
+    .slide-img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .slide-nav button{
+        opacity: 0;
+        width: 165px;
+    }
+
+    #description{
+        padding: 50px;
+        margin-top: 100px;
+        min-width: 174px;
+        margin-left: 40px;
+    }
+    #formulario{
+        
+        margin-left: -17px;
+        margin-right: 300px;
+        padding: 25px;
+        margin-top: 100px;
+        min-width: 325px;
+        color: white;   
+        
+    }
+
+    .rodape{
+        background-color: rgb(51, 51, 51);
+        margin-left: 54px;
+        margin-right: 146px;
+        padding: 0px;
+        margin-top: 100px;
+        min-width: 195px;
+        
+        
+        
+    }
+
+  }
+
+  
+  
+
+@media only screen and (max-width: 800px) {
+    #description{
+        padding: 50px;
+        margin-top: 100px;
+        min-width: 192px;
+        margin-left: 35px;
+    }
+
+    #formulario{
+        
+        margin-left: 7px;
+        margin-right: 300px;
+        padding: 25px;
+        margin-top: 100px;
+        min-width: 303px;
+        
+        
+    }
+  }
+  
+  @media only screen and (max-width: 1000px)  {
+    
+
+    
+
+    #serv{
+        
+        margin-left: 4px;
+        margin-right: -2px;
+        
+    }
+    .slide{
+    max-width: 575px;
+    height: 350px;
+    margin: 20px 2px;
+    display: grid;
+    
+    }
+    
+    .slide-items {
+        position: relative;
+        grid-area: 1/1;
+        border-radius: 5px;
+        overflow: hidden;
+        border: 3px solid black;
+        width: 350px;
+    }
+
+    .slide-img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .slide-nav button{
+        opacity: 0;
+        width: 165px;
+    }
+
+    #description{
+        padding: 50px;
+        margin-top: 100px;
+        min-width: 174px;
+        margin-left: 74px;
+    }
+    #formulario{
+        
+        margin-left: 17px;
+        margin-right: 300px;
+        padding: 25px;
+        margin-top: 100px;
+        min-width: 325px;
+        color: white;   
+        
+    }
+
+    .rodape{
+        background-color: rgb(51, 51, 51);
+        margin-left: 84px;
+        margin-right: 146px;
+        padding: 0px;
+        margin-top: 100px;
+        min-width: 195px;
+        
+        
+        
+    }
+}
